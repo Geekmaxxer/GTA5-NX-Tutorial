@@ -214,11 +214,42 @@
 
         </button>
 
+
+        <button
+          class="nav-item"
+          data-target="extras"
+          type="button"
+        >
+
+          <span
+            class="num"
+            aria-hidden="true"
+          >
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M4 2h8a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zM4 6h8M4 10h5"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          Extras
+
+        </button>
+
       </nav>
 
 
       <div class="sidebar-foot">
-        Community Guide · @Geekmaxxer/GTA5-NX-Tutorial is not affiliated with Rockstar, Nintendo, or Paralympics Productions.
+        Community guide · not affiliated with Rockstar or Nintendo.
       </div>
 
     </aside>
@@ -257,7 +288,7 @@
             class="progress-count"
             id="progress-count"
           >
-            01 / 04
+            01 / 05
           </span>
 
         </div>
@@ -400,17 +431,17 @@
               An NSP/XCI/NSC installer
 
               <span>
-                Can be Tinfoil, Goldenleaf, Nut, Awoo Installer, DBi, etc
+                Nut, Awoo Installer, or DBi — pick one
               </span>
             </div>
 
             <a
               class="dl-btn"
-              href="https://github.com/Huntereb/Awoo-Installer"
+              href="https://github.com/blawar/nut"
               target="_blank"
               rel="noopener"
             >
-              What I use
+              Get one
             </a>
 
           </li>
@@ -1411,7 +1442,7 @@
 
 
         <h2 id="cant-install">
-          Case 1 - Can't install the NSP with any installer
+          Case 1 — Can't install the NSP with any installer
         </h2>
 
 
@@ -1436,7 +1467,7 @@
 
 
         <h2 id="crash-splash">
-          Case 2 - Crashes at splash screen or on 2 stars
+          Case 2 — Crashes at splash screen or on 2 stars
         </h2>
 
 
@@ -1465,14 +1496,14 @@
 
           <li>
             <p>
-              <strong>Incomplete RomFS copy:</strong> You failed to copy every single game file from your patched PC folder into the correct RomFS directory on your SD card. Every file and folder (including the <code>switch</code> and <code>update</code> folders and all <code>switch*.rpf</code> files) must be present. Failing to do so will cause LayeredFS to never have access to your game files until you fix it.
+              <strong>Incomplete RomFS copy:</strong> You failed to copy every single game file from your patched PC folder into the correct RomFS directory on your SD card. Every file and folder (including the <code>switch</code> and <code>update</code> folders and all <code>switch*.rpf</code> files) must be present.
             </p>
 
 
             <div class="path-row">
 
               <p class="path">
-                SWITCH SD\atmosphere\contents\0100b00b51230000\romfs
+                atmosphere\contents\0100b00b51230000\romfs
               </p>
 
               <button
@@ -1498,7 +1529,7 @@
           </div>
 
           <p>
-            Double-check that your SD card layout matches the guide precisely. Nearly all boot crashes are solved by verifying your <code>romfs</code> contents, trimming unsupported DLCs, and updating syspatches. If you still have issues, try a fresh patch from scratch with a good working GTA 5 Legacy PC install.
+            Double-check that your SD card layout matches the guide precisely. Nearly all boot crashes are solved by verifying your <code>romfs</code> contents and trimming unsupported DLCs.
           </p>
 
         </div>
@@ -1511,6 +1542,245 @@
             type="button"
           >
             ← Back: Installing DLCs
+          </button>
+
+          <span class="spacer"></span>
+
+          <button
+            data-goto="extras"
+            type="button"
+          >
+            Next: Extras →
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           EXTRAS
+           =================================================== -->
+
+      <section
+        id="extras"
+        class="panel"
+      >
+
+        <div class="hero-meta">
+          <span>TOOLS &amp; MODS</span>
+          <i></i>
+          <span>CUSTOM UTILITIES</span>
+        </div>
+
+
+        <p class="panel-eyebrow">
+          Additional downloads
+        </p>
+
+
+        <h1>
+          Extras &amp; Custom Tools
+        </h1>
+
+
+        <p class="panel-lede">
+          Supplementary utilities, custom radio audio managers, and script modification menus built specifically to complement your GTA V Switch port setup.
+        </p>
+
+
+        <h2 id="radio-editor">
+          RPF Radio Editor
+          <span class="section-sub">
+            Manage custom radio audio tracks
+          </span>
+        </h2>
+
+
+        <p>
+          A companion tool designed for editing and managing radio station audio containers inside GTA V RPF files. Full usage guidelines, prerequisites, and instructions are detailed directly in the project's repository readme. It auto converts your non <code>.wav</code> music files to the required format if needed.
+        </p>
+
+
+        <ul class="dl-list">
+
+          <li>
+
+            <div class="dl-name">
+              RPF Radio Editor Repository
+              <span>
+                GitHub project &amp; documentation readme
+              </span>
+            </div>
+
+            <a
+              class="dl-btn"
+              href="https://github.com/Geekmaxxer/gta-radio-editor"
+              target="_blank"
+              rel="noopener"
+            >
+              View GitHub
+            </a>
+
+          </li>
+
+        </ul>
+
+
+        <h2 id="switch-mod-menu">
+          MEGATARD Switch Mod Menu
+          <span class="section-sub">
+            Custom in-game mod menu for GTA V Switch
+          </span>
+        </h2>
+
+
+        <p>
+          A lightweight mod menu built using RAGE Scripting Engine and compiled into uncompressed raw <code>.nsc</code> script files. It is designed to drop directly into your game's script container path for easy in-game access.
+        </p>
+
+
+        <ul class="dl-list">
+
+          <li>
+
+            <div class="dl-name">
+              MEGATARD Switch Mod Menu v0.8
+              <span>
+                Contains "Easy" & "Hard" method install zips, plus a feature list for that version.
+              </span>
+            </div>
+
+            <a
+              class="dl-btn"
+              href="https://buzzheavier.com/az4q79fpj7d0"
+              target="_blank"
+              rel="noopener"
+            >
+              Download
+            </a>
+
+          </li>
+
+        </ul>
+
+
+        <div class="callout info">
+
+          <div class="callout-label">
+            Want all DLC vehicles &amp; weapons?
+          </div>
+
+          <p>
+            If you want all the DLC vehicles, weapons, mods, clothes, and locations, download the <code>all working dlcs.zip</code> package and add whatever you don't have here:
+          </p>
+
+          <div class="path-row" style="margin-top: 10px;">
+            <p class="path">
+              atmosphere\contents\0100b00b51230000\romfs\update\switch\dlcpacks
+            </p>
+            <button class="copy-btn" type="button" aria-label="Copy path" title="Copy path">⧉</button>
+          </div>
+
+        </div>
+
+
+        <h3>
+          Easy Way to Install the Mod Menu
+        </h3>
+
+
+        <ol class="steps">
+
+          <li>
+            <p>
+              Go to your GTA 5 Switch files or Switch SD card directory.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Go to the update path:
+            </p>
+
+            <div class="path-row">
+              <p class="path">
+                atmosphere\contents\0100b00b51230000\romfs\update
+              </p>
+              <button class="copy-btn" type="button" aria-label="Copy path" title="Copy path">⧉</button>
+            </div>
+          </li>
+
+          <li>
+            <p>
+              Replace <code>update2.rpf</code> with the one you just downloaded (keep a backup of your old one just in case).
+            </p>
+          </li>
+
+        </ol>
+
+
+        <h3>
+          Experienced Way to Install the Mod Menu
+        </h3>
+
+
+        <ol class="steps">
+
+          <li>
+            <p>
+              Open your RPF Editor (OpenIV / CodeWalker).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Load the <code>update2.rpf</code> archive either directly from your SD card with a reader or copy it over then load it.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Navigate to the internal script container path:
+            </p>
+
+            <div class="path-row">
+              <p class="path">
+                update2.rpf\switch\levels\gta5\script\script_rel.rpf
+              </p>
+              <button class="copy-btn" type="button" aria-label="Copy path" title="Copy path">⧉</button>
+            </div>
+          </li>
+
+          <li>
+            <p>
+              Drag <code>achievement_controller.nsc</code>, <code>ragemenu.nsc</code>, &amp; <code>shop_controller.nsc</code> inside <code>script_rel.rpf</code> with <strong>Edit Mode</strong> turned on.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Then go to your SD card with USB-FT or a reader and replace the <code>update2.rpf</code> in:
+            </p>
+
+            <div class="path-row">
+              <p class="path">
+                atmosphere\contents\0100b00b51230000\romfs\update
+              </p>
+              <button class="copy-btn" type="button" aria-label="Copy path" title="Copy path">⧉</button>
+            </div>
+          </li>
+
+        </ol>
+
+
+        <div class="panel-footnav">
+
+          <button
+            data-goto="error-reasons"
+            type="button"
+          >
+            ← Back: Error Reasons
           </button>
 
           <span class="spacer"></span>
