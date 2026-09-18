@@ -28,13 +28,15 @@
   var names = {
     installing: 'Installing',
     updating: 'Updating',
-    dlcs: 'Installing DLCs'
+    dlcs: 'Installing DLCs',
+    'error-reasons': 'Error Reasons'
   };
 
   var order = [
     'installing',
     'updating',
-    'dlcs'
+    'dlcs',
+    'error-reasons'
   ];
 
 

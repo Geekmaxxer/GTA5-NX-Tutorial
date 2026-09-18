@@ -183,6 +183,37 @@
 
         </button>
 
+
+        <button
+          class="nav-item"
+          data-target="error-reasons"
+          type="button"
+        >
+
+          <span
+            class="num"
+            aria-hidden="true"
+          >
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M8 1.5l6.5 11.5h-13L8 1.5zm0 4v3m0 2h.01"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          Error Reasons
+
+        </button>
+
       </nav>
 
 
@@ -226,7 +257,7 @@
             class="progress-count"
             id="progress-count"
           >
-            01 / 03
+            01 / 04
           </span>
 
         </div>
@@ -711,7 +742,7 @@
 
           <li>
             <p>
-              Copy your <code>.nsp</code> anywhere onto your SD Card
+              Copy your <code>.nsp</code> anywhere onto your SD card
               and install it with Awoo Installer or DBi.
             </p>
           </li>
@@ -720,7 +751,7 @@
           <li>
 
             <p>
-              On the SD Card, create the folder path:
+              On the SD card, create the folder path:
             </p>
 
             <div class="path-row">
@@ -748,7 +779,7 @@
             <p>
               From your patched GTA V folder, copy everything inside
               its <code>romfs</code> folder into the one you just made
-              on the SD Card.
+              on the SD card.
             </p>
 
           </li>
@@ -889,13 +920,13 @@
           <li>
 
             <p>
-              Copy the new file over the one on your SD Card and replace the existing one in this folder (never change the name of the <code>update.rpf</code> file):
+              Copy the new file over the one on your SD card:
             </p>
 
             <div class="path-row">
 
               <p class="path">
-                SWITCH SD\atmosphere\contents\0100b00b51230000\romfs\update\
+                SWITCHSD\atmosphere\contents\0100b00b51230000\romfs\update\update.rpf
               </p>
 
               <button
@@ -950,10 +981,10 @@
           >
             Patching Steps
           </button>
+
           from the Installing tab, but you can skip the DLC deletion
           and the file cleanup; that part doesn't need to be redone
-          for a platform pack update; unless you're repatching the 
-          entire game again.
+          for a platform pack update.
         </p>
 
 
@@ -971,6 +1002,7 @@
           </p>
 
         </div>
+
 
         <h2 id="case-3">
           Case 3 - Updating the NSP
@@ -1003,6 +1035,7 @@
 
         </div>
 
+
         <div class="panel-footnav">
 
           <button
@@ -1023,12 +1056,11 @@
 
         </div>
 
-
       </section>
 
 
       <!-- ===================================================
-           DLCs
+           DLCS
            =================================================== -->
 
       <section
@@ -1132,7 +1164,7 @@
           <p>
             Packs not listed here haven't been confirmed.
             Adding an untested one is the most likely way to bring
-            the crashing back; try it on a spare SD Card or back up
+            the crashing back; try it on a spare SD card or back up
             your saves first.
           </p>
 
@@ -1160,7 +1192,7 @@
             </h4>
 
             <p>
-              Simpler. Works great if you only care about the 8 required packs
+              Simpler. Fine if you only care about the 8 required packs
               and don't plan on adding more later.
             </p>
 
@@ -1175,8 +1207,8 @@
 
             <p>
               Keeps every original DLC folder sitting in a spare directory
-              on your PC, ready to copy back in whenever you want more content
-              added. (Like more Vehicles & Mods, Weapons, PEDs, Locations, and Clothing)
+              on your PC, ready to copy back in whenever you want one from
+              the confirmed-working list above.
             </p>
 
           </div>
@@ -1193,12 +1225,12 @@
 
           <img
             src="assets/img/dlcpacks-folder.png"
-            alt="dlcpacks folder on the SD Card containing exactly the 8 required folders: mpbiker, mpchristmas2, mpheist, mppatchesng, patchday1ng, patchday2bng, patchday2ng, patchday3ng."
+            alt="dlcpacks folder on the SD card containing exactly the 8 required folders: mpbiker, mpchristmas2, mpheist, mppatchesng, patchday1ng, patchday2bng, patchday2ng, patchday3ng."
             loading="lazy"
           >
 
           <figcaption>
-            The 8 required packs on the SD Card -
+            The 8 required packs on the SD card -
             this is what you're adding to, not replacing.
           </figcaption>
 
@@ -1271,7 +1303,7 @@
           <li>
 
             <p>
-              The Switch reads these DLC folders directly off the SD Card,
+              The Switch reads these DLC folders directly off the SD card,
               so you don't need to rebuild the NSP. Copy the DLC folder
               straight into:
             </p>
@@ -1331,6 +1363,154 @@
             type="button"
           >
             ← Back: Updating
+          </button>
+
+          <span class="spacer"></span>
+
+          <button
+            data-goto="error-reasons"
+            type="button"
+          >
+            Next: Error Reasons →
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           ERROR REASONS
+           =================================================== -->
+
+      <section
+        id="error-reasons"
+        class="panel"
+      >
+
+        <div class="hero-meta">
+          <span>TROUBLESHOOTING</span>
+          <i></i>
+          <span>COMMON ISSUES</span>
+        </div>
+
+
+        <p class="panel-eyebrow">
+          Diagnostics &amp; fixes
+        </p>
+
+
+        <h1>
+          Error Reasons &amp; Troubleshooting
+        </h1>
+
+
+        <p class="panel-lede">
+          Running into installation failures or boot crashes? Most issues stem from outdated system patches, un-trimmed DLC folders, or missing files in your RomFS directory. Check the cases below for your fix.
+        </p>
+
+
+        <h2 id="cant-install">
+          Case 1 - Can't install the NSP with any installer
+        </h2>
+
+
+        <p>
+          If Tinfoil, DBI, Awoo, or Nut all fail to install your generated NSP with signature or version errors, your Atmosphere system patches are out of date.
+        </p>
+
+
+        <div class="callout warn">
+
+          <div class="callout-label">
+            Outdated Syspatches
+          </div>
+
+          <p>
+            You need to update your system patches. Download and install the latest version from the 
+            <a href="https://github.com/impeeza/sys-patch" target="_blank" rel="noopener">impeeza/sys-patch</a> 
+            repository, then reboot your Switch.
+          </p>
+
+        </div>
+
+
+        <h2 id="crash-splash">
+          Case 2 - Crashes at splash screen or on 2 stars
+        </h2>
+
+
+        <p>
+          If the game boots to the Nintendo Switch splash screen and immediately crashes, or hangs and crashes right when the two stars appear during pre-loading, it is caused by one of two common mistakes:
+        </p>
+
+
+        <ol class="steps">
+
+          <li>
+            <p>
+              <strong>Untrimmed or bad DLC packs:</strong> You didn't delete the extra DLC packs, or you added a pack that isn't compatible with this build. Head back to the 
+              <button
+                class="nav-item"
+                style="display:inline-flex; padding:2px 8px; margin:0; background:none; border:none; color:#3b82f6; font-weight:bold;"
+                data-target="dlcs"
+                type="button"
+              >
+                Installing DLCs tab
+              </button>
+              to strip your DLC folder down to the required working packs.
+            </p>
+          </li>
+
+
+          <li>
+            <p>
+              <strong>Incomplete RomFS copy:</strong> You failed to copy every single game file from your patched PC folder into the correct RomFS directory on your SD card. Every file and folder (including the <code>switch</code> and <code>update</code> folders and all <code>switch*.rpf</code> files) must be present. Failing to do so will cause LayeredFS to never have access to your game files until you fix it.
+            </p>
+
+
+            <div class="path-row">
+
+              <p class="path">
+                SWITCH SD\atmosphere\contents\0100b00b51230000\romfs
+              </p>
+
+              <button
+                class="copy-btn"
+                type="button"
+                aria-label="Copy path"
+                title="Copy path"
+              >
+                ⧉
+              </button>
+
+            </div>
+
+          </li>
+
+        </ol>
+
+
+        <div class="callout ok">
+
+          <div class="callout-label">
+            Quick fix reminder
+          </div>
+
+          <p>
+            Double-check that your SD card layout matches the guide precisely. Nearly all boot crashes are solved by verifying your <code>romfs</code> contents, trimming unsupported DLCs, and updating syspatches. If you still have issues, try a fresh patch from scratch with a good working GTA 5 Legacy PC install.
+          </p>
+
+        </div>
+
+
+        <div class="panel-footnav">
+
+          <button
+            data-goto="dlcs"
+            type="button"
+          >
+            ← Back: Installing DLCs
           </button>
 
           <span class="spacer"></span>
