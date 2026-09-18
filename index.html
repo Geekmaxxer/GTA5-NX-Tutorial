@@ -1,322 +1,1366 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GTA V Switch Port Guide</title>
-<meta name="description" content="Install, update, and add DLCs to the GTA V Nintendo Switch port without crashes.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GTA V Switch Port Guide</title>
+
+  <meta
+    name="description"
+    content="Install, update, and add DLCs to the GTA V Nintendo Switch port without crashes."
+  >
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
 
-<a class="skip-link" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#main-content">
+    Skip to content
+  </a>
 
-<button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <!-- Mobile navigation toggle -->
+  <button
+    class="menu-toggle"
+    aria-label="Toggle navigation"
+    aria-expanded="false"
+    type="button"
+  >
+    ☰
+  </button>
 
-<div class="layout">
+  <div class="layout">
 
-  <aside class="sidebar" aria-label="Guide sections">
-    <div class="sidebar-brand">
-      <span class="game-tag">GTA V · Nintendo Switch</span>
-      <h1>Switch Port Guide</h1>
-      <p>Install once, update painlessly, add DLC without crashing.</p>
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside
+      class="sidebar"
+      aria-label="Guide sections"
+    >
+
+      <div class="sidebar-brand">
+
+        <span class="game-tag">
+          GTA V · Nintendo Switch
+        </span>
+
+        <h1>
+          Switch Port Guide
+        </h1>
+
+        <p>
+          Install once, update painlessly,
+          add DLC without crashing.
+        </p>
+
+      </div>
+
+
+      <nav
+        class="sidebar-nav"
+        aria-label="Sections"
+      >
+
+        <div class="nav-label">
+          GUIDE
+        </div>
+
+
+        <button
+          class="nav-item"
+          data-target="installing"
+          type="button"
+        >
+
+          <span
+            class="num"
+            aria-hidden="true"
+          >
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M8 1v9m0 0L4.5 6.5M8 10l3.5-3.5M2 12.5v1a1 1 0 001 1h10a1 1 0 001-1v-1"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          Installing
+
+        </button>
+
+
+        <button
+          class="nav-item"
+          data-target="updating"
+          type="button"
+        >
+
+          <span
+            class="num"
+            aria-hidden="true"
+          >
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="M13 4.5A5.5 5.5 0 003 6M3 11.5A5.5 5.5 0 0013 10M3 2.5v3.5H6.5M13 13.5V10H9.5"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          Updating
+
+        </button>
+
+
+        <button
+          class="nav-item"
+          data-target="dlcs"
+          type="button"
+        >
+
+          <span
+            class="num"
+            aria-hidden="true"
+          >
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <rect
+                x="2"
+                y="2"
+                width="12"
+                height="12"
+                rx="2"
+                stroke="currentColor"
+                stroke-width="1.4"
+              />
+
+              <path
+                d="M8 5.5v5M5.5 8h5"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+
+          Installing DLCs
+
+        </button>
+
+      </nav>
+
+
+      <div class="sidebar-foot">
+        Community guide · not affiliated with Rockstar or Nintendo.
+      </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main id="main-content">
+
+      <!-- TOP BAR -->
+
+      <div class="topbar">
+
+        <div class="topbar-context">
+
+          <span class="topbar-kicker">
+            GTA V · SWITCH PORT
+          </span>
+
+          <span class="topbar-divider">
+            /
+          </span>
+
+          <span id="topbar-section">
+            Installing
+          </span>
+
+        </div>
+
+
+        <div class="topbar-actions">
+
+          <span
+            class="progress-count"
+            id="progress-count"
+          >
+            01 / 03
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           INSTALLING
+           =================================================== -->
+
+      <section
+        id="installing"
+        class="panel"
+      >
+
+        <div class="hero-meta">
+          <span>INSTALLATION</span>
+        </div>
+
+
+        <p class="panel-eyebrow">
+          Build &amp; setup
+        </p>
+
+
+        <h1>
+          Installing the GTA V Switch port
+        </h1>
+
+
+        <p class="panel-lede">
+          This walks you through turning a legally-owned GTA V PC install into an NSP you can put on
+          your Switch, from the first download to the first boot. Read a step fully before doing it;
+          most install problems come from skipping the cleanup steps.
+        </p>
+
+
+        <h2 id="prereqs">
+          What you'll need
+          <span class="section-sub">
+            Grab all of these before you start
+          </span>
+        </h2>
+
+
+        <ul class="dl-list">
+
+          <li>
+
+            <div class="dl-name">
+              GTA V Patcher
+              <span>
+                gtav-patcher-4.00.7z
+              </span>
+            </div>
+
+            <a
+              class="dl-btn"
+              href="https://gofile.io/d/FC7L2e6c"
+              target="_blank"
+              rel="noopener"
+            >
+              Download
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <div class="dl-name">
+              <code>update.rpf</code> &amp;
+              <code>update2.rpf</code>
+
+              <span>
+                Update.zip
+              </span>
+            </div>
+
+            <a
+              class="dl-btn"
+              href="https://gofile.io/d/oz4mOpeV"
+              target="_blank"
+              rel="noopener"
+            >
+              Download
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <div class="dl-name">
+              Latest patch build
+
+              <span>
+                build-9b485eb8.7z
+              </span>
+            </div>
+
+            <a
+              class="dl-btn"
+              href="https://buzzheavier.com/xo6825rx2lqz"
+              target="_blank"
+              rel="noopener"
+            >
+              Download
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <div class="dl-name">
+              NSPD → NSP Repack Tool
+
+              <span>
+                nspd-repack-tool v1.2
+              </span>
+            </div>
+
+            <a
+              class="dl-btn"
+              href="https://github.com/1165565692-lang/nspd-repack-tool/releases/tag/v1.2"
+              target="_blank"
+              rel="noopener"
+            >
+              Download
+            </a>
+
+          </li>
+
+
+          <li>
+
+            <div class="dl-name">
+              An NSP/XCI/NSC installer
+
+              <span>
+                Nut, Awoo Installer, or DBi — pick one
+              </span>
+            </div>
+
+            <a
+              class="dl-btn"
+              href="https://github.com/blawar/nut"
+              target="_blank"
+              rel="noopener"
+            >
+              Get one
+            </a>
+
+          </li>
+
+        </ul>
+
+
+        <div class="callout info">
+
+          <div class="callout-label">
+            Before you start
+          </div>
+
+          <p>
+            Have your own copy of the GTA V Legacy PC game files saved somewhere.
+            The patcher edits a copy of these files; it doesn't download the game for you.
+          </p>
+
+        </div>
+
+
+        <!-- STEP 1 -->
+
+        <h2 id="build-nsp">
+          1 · Build the installable NSP
+        </h2>
+
+
+        <ol class="steps">
+
+          <li>
+            <p>
+              Extract <code>build-9b485eb8.7z</code> somewhere,
+              then open <code>NPSDRepackGUI.exe</code>.
+            </p>
+          </li>
+
+
+          <li>
+            <p>
+              Click <strong>Browse</strong>, go into the extracted
+              <code>build-9b485eb8</code> folder, and select the
+              <code>game_nx_master.nspd</code> folder.
+            </p>
+          </li>
+
+
+          <li>
+            <p>
+              With <code>game_nx_master.nspd</code> selected,
+              press <strong>Start repack</strong>.
+            </p>
+          </li>
+
+
+          <li>
+
+            <p>
+              When it finishes you'll get an <code>outputs</code>
+              folder containing your NSP. Use the app's
+              <strong>Open output folder</strong> button to jump straight there.
+            </p>
+
+
+            <div class="path-row">
+
+              <p class="path">
+                outputs\build-9b485eb8-game_nx_master.nspd-20260909_143107\nsp\0100b00b51230000.nsp
+              </p>
+
+              <button
+                class="copy-btn"
+                type="button"
+                aria-label="Copy path"
+                title="Copy path"
+              >
+                ⧉
+              </button>
+
+            </div>
+
+          </li>
+
+        </ol>
+
+
+        <figure
+          class="shot is-zoomable"
+          tabindex="0"
+          role="button"
+          aria-label="Open screenshot larger"
+        >
+
+          <img
+            src="assets/img/nspd-repack-tool.png"
+            alt="NSPD to NSP Repack Tool v1.2 showing a completed repack, with NSP, output, and manifest paths listed in the log."
+            loading="lazy"
+          >
+
+          <figcaption>
+            The repack tool after a finished run - the log shows exactly where your
+            <code>.nsp</code> landed.
+          </figcaption>
+
+        </figure>
+
+
+        <!-- STEP 2 -->
+
+        <h2 id="patch-files">
+          2 · Patch your game files
+        </h2>
+
+
+        <ol class="steps">
+
+          <li>
+            <p>
+              Extract <code>gtav-patcher-4.00.7z</code>,
+              open the <code>win-x64</code> folder,
+              and launch <code>GTAVPatcher.exe</code>.
+            </p>
+          </li>
+
+
+          <li>
+            <p>
+              Next to <strong>GTA V folder</strong>,
+              browse to the GTA V install you want to patch.
+            </p>
+          </li>
+
+
+          <li>
+            <p>
+              Next to <strong>Platform pack</strong>,
+              select the <code>build-9b485eb8\platformpack</code> folder.
+            </p>
+          </li>
+
+
+          <li>
+            <p>
+              Set <strong>DLC packs</strong> to <strong>Minimum</strong>
+              and make sure <strong>Delete high-detail (+hi) resources</strong>
+              is checked.
+            </p>
+          </li>
+
+
+          <li>
+            <p>
+              Click <strong>Patch</strong> and let it run.
+            </p>
+          </li>
+
+        </ol>
+
+
+        <figure
+          class="shot is-zoomable"
+          tabindex="0"
+          role="button"
+          aria-label="Open screenshot larger"
+        >
+
+          <img
+            src="assets/img/asset-patcher.png"
+            alt="GTA V Asset Patcher window with the GTA V folder, target platform set to Nintendo Switch, platform pack path, and DLC packs set to Single player - minimum with Delete high-detail resources checked."
+            loading="lazy"
+          >
+
+          <figcaption>
+            Correct settings before you hit patch - target platform Nintendo Switch,
+            DLC packs on <strong>minimum</strong>, high-detail resources deleted.
+          </figcaption>
+
+        </figure>
+
+
+        <div class="callout warn">
+
+          <div class="callout-label">
+            Takes about 30 minutes
+          </div>
+
+          <p>
+            Let the patcher run to completion; closing it early leaves you with
+            a half-patched folder you'll need to redo from scratch.
+          </p>
+
+        </div>
+
+
+        <h3>
+          Clean up the patched folder
+        </h3>
+
+
+        <p>
+          Once patching finishes, open your patched GTA V folder and delete every
+          <code>.dll</code> and <code>.exe</code> file except <code>GTA5.exe</code>,
+          along with anything Rockstar-related. You should be left with exactly this:
+        </p>
+
+
+        <div class="chip-grid">
+
+          <span class="chip">
+            switch/ folder
+          </span>
+
+          <span class="chip">
+            update/ folder
+          </span>
+
+          <span class="chip">
+            switch(letter).rpf files
+          </span>
+
+          <span class="chip">
+            .txt files
+          </span>
+
+        </div>
+
+
+        <h3>
+          Trim the DLC packs
+        </h3>
+
+
+        <p>
+          Open the following folder and remove DLCs down to the 8 that boot reliably.
+          This is the single most common crash cause; don't skip it.
+        </p>
+
+
+        <div class="path-row">
+
+          <p class="path">
+            GTA5\update\switch\dlcpacks
+          </p>
+
+          <button
+            class="copy-btn"
+            type="button"
+            aria-label="Copy path"
+            title="Copy path"
+          >
+            ⧉
+          </button>
+
+        </div>
+
+
+        <div class="chip-grid">
+
+          <span class="chip keep">
+            mpbiker
+          </span>
+
+          <span class="chip keep">
+            mpheist
+          </span>
+
+          <span class="chip keep">
+            mpchristmas2
+          </span>
+
+          <span class="chip keep">
+            mppatchesng
+          </span>
+
+          <span class="chip keep">
+            patchday1ng
+          </span>
+
+          <span class="chip keep">
+            patchday2bng
+          </span>
+
+          <span class="chip keep">
+            patchday2ng
+          </span>
+
+          <span class="chip keep">
+            patchday3ng
+          </span>
+
+        </div>
+
+
+        <div class="callout info">
+
+          <div class="callout-label">
+            Want more content later?
+          </div>
+
+          <p>
+            Don't delete the other DLC folders outright if you can help it;
+            cut and paste them somewhere safe instead.
+
+            The
+
+            <button
+              class="nav-item"
+              style="display:inline-flex;padding:2px 8px;margin:0;"
+              data-target="dlcs"
+              type="button"
+            >
+              Installing DLCs
+            </button>
+
+            tab covers which extra packs are safe to add back in, and how.
+          </p>
+
+        </div>
+
+
+        <!-- STEP 3 -->
+
+        <h2 id="install-switch">
+          3 · Install it on your Switch
+        </h2>
+
+
+        <ol class="steps">
+
+          <li>
+            <p>
+              Copy your <code>.nsp</code> anywhere onto your SD card
+              and install it with Awoo Installer or DBi.
+            </p>
+          </li>
+
+
+          <li>
+
+            <p>
+              On the SD card, create the folder path:
+            </p>
+
+            <div class="path-row">
+
+              <p class="path">
+                atmosphere\contents\0100b00b51230000\romfs
+              </p>
+
+              <button
+                class="copy-btn"
+                type="button"
+                aria-label="Copy path"
+                title="Copy path"
+              >
+                ⧉
+              </button>
+
+            </div>
+
+          </li>
+
+
+          <li>
+
+            <p>
+              From your patched GTA V folder, copy everything inside
+              its <code>romfs</code> folder into the one you just made
+              on the SD card.
+            </p>
+
+          </li>
+
+        </ol>
+
+
+        <figure
+          class="shot is-zoomable"
+          tabindex="0"
+          role="button"
+          aria-label="Open screenshot larger"
+        >
+
+          <img
+            src="assets/img/romfs-contents.png"
+            alt="File explorer showing the final romfs folder contents: switch and update folders, switch(letter).rpf files, GTA5.exe, title.rgl, version.txt, and versioninfo.txt."
+            loading="lazy"
+          >
+
+          <figcaption>
+            What a correctly populated <span class="path" style="display:inline;padding:1px 6px;">romfs</span> folder looks like once everything's copied over.
+          </figcaption>
+
+        </figure>
+
+
+        <div class="callout ok">
+
+          <div class="callout-label">
+            That's the install done
+          </div>
+
+          <p>
+            Launch the game from your Switch's home menu.
+            If it boots to the title screen, you're set.
+          </p>
+
+        </div>
+
+
+        <div class="panel-footnav">
+
+          <span class="spacer"></span>
+
+          <button
+            data-goto="updating"
+            type="button"
+          >
+            Next: Updating the game →
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           UPDATING
+           =================================================== -->
+
+      <section
+        id="updating"
+        class="panel"
+      >
+
+        <div class="hero-meta">
+          <span>MAINTENANCE</span>
+          <i></i>
+          <span>UPDATE PATHS</span>
+        </div>
+
+
+        <p class="panel-eyebrow">
+          Keeping it current
+        </p>
+
+
+        <h1>
+          Updating the game
+        </h1>
+
+
+        <p class="panel-lede">
+          What you need to redo depends entirely on what the new patch actually touched.
+          Check which case you're in before you start deleting things.
+        </p>
+
+
+        <h2 id="case-1">
+          Case 1 - Only <code>gameconfig.xml</code> changed
+        </h2>
+
+
+        <p>
+          This is the lightest update. You only need the
+
+          <a
+            href="https://github.com/Geekmaxxer/GTA5SwitchGCUpdater"
+            target="_blank"
+            rel="noopener"
+          >
+            GTA5SwitchGCUpdater
+          </a>
+
+          tool.
+        </p>
+
+
+        <ol class="steps">
+
+          <li>
+            <p>
+              Open the updater. Next to
+              <strong>Select gameconfig.xml</strong>,
+              browse to the new gameconfig file from the update.
+            </p>
+          </li>
+
+
+          <li>
+            <p>
+              Next to <strong>Select update.rpf file</strong>,
+              browse to the <code>update.rpf</code> inside your
+              patched GTA V folder's <code>update</code> directory.
+            </p>
+          </li>
+
+
+          <li>
+            <p>
+              Press <strong>Update RPF</strong>
+              and choose where to save the result.
+            </p>
+          </li>
+
+
+          <li>
+
+            <p>
+              Copy the new file over the one on your SD Card and replace the existing one in this folder (never change the name of the <code>update.rpf</code> file):
+            </p>
+
+            <div class="path-row">
+
+              <p class="path">
+                SWITCH SD\atmosphere\contents\0100b00b51230000\romfs\update\
+              </p>
+
+              <button
+                class="copy-btn"
+                type="button"
+                aria-label="Copy path"
+                title="Copy path"
+              >
+                ⧉
+              </button>
+
+            </div>
+
+          </li>
+
+        </ol>
+
+
+        <figure
+          class="shot is-zoomable"
+          tabindex="0"
+          role="button"
+          aria-label="Open screenshot larger"
+        >
+
+          <img
+            src="assets/img/gameconfig-updater.png"
+            alt="GTA Gameconfig Updater v0.2 with a gameconfig.xml and an update.rpf file selected, and an Update RPF button."
+            loading="lazy"
+          >
+
+          <figcaption>
+            Both files selected and ready - one click writes the merged
+            <code>update.rpf</code>.
+          </figcaption>
+
+        </figure>
+
+
+        <h2 id="case-2">
+          Case 2 - The platform pack changed
+        </h2>
+
+
+        <p>
+          Repeat the
+          <button
+            class="nav-item"
+            style="display:inline-flex; padding:2px 8px; margin:0; background:none; border:none; color:#3b82f6; font-weight:bold;"
+            data-target="installing"
+            type="button"
+          >
+            Patching Steps
+          </button>
+          from the Installing tab, but you can skip the DLC deletion
+          and the file cleanup; that part doesn't need to be redone
+          for a platform pack update; unless you're repatching the 
+          entire game again.
+        </p>
+
+
+        <div class="callout warn">
+
+          <div class="callout-label">
+            For a major update
+          </div>
+
+          <p>
+            If the update is a big one, you'll get the most reliable result
+            by starting over completely: fresh GTA V Legacy PC files, and
+            the full setup from the Installing tab, rather than patching
+            on top of what's already there.
+          </p>
+
+        </div>
+
+
+        <div class="panel-footnav">
+
+          <button
+            data-goto="installing"
+            type="button"
+          >
+            ← Back: Installing
+          </button>
+
+          <span class="spacer"></span>
+
+          <button
+            data-goto="dlcs"
+            type="button"
+          >
+            Next: Installing DLCs →
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           DLCs
+           =================================================== -->
+
+      <section
+        id="dlcs"
+        class="panel"
+      >
+
+        <div class="hero-meta">
+          <span>OPTIONAL CONTENT</span>
+          <i></i>
+          <span>COMPATIBILITY</span>
+        </div>
+
+
+        <p class="panel-eyebrow">
+          Controlled additions
+        </p>
+
+
+        <h1>
+          Adding more DLCs safely
+        </h1>
+
+
+        <p class="panel-lede">
+          The base install strips almost every DLC down to 8 so the game boots reliably.
+          Plenty of other packs are known to work fine; you just add them back deliberately,
+          one at a time, instead of restoring everything at once.
+        </p>
+
+
+        <h2 id="known-working">
+          DLCs confirmed to work
+        </h2>
+
+
+        <p>
+          These have been tested on top of the 8 required packs without crashing:
+        </p>
+
+
+        <div class="chip-grid">
+
+          <span class="chip ok">
+            mpassault
+          </span>
+
+          <span class="chip ok">
+            mpchristmas2018
+          </span>
+
+          <span class="chip ok">
+            mpgunrunning
+          </span>
+
+          <span class="chip ok">
+            mpsecurity
+          </span>
+
+          <span class="chip ok">
+            mpheist3
+          </span>
+
+          <span class="chip ok">
+            mpheist4
+          </span>
+
+          <span class="chip ok">
+            mpluxe
+          </span>
+
+          <span class="chip ok">
+            mpluxe2
+          </span>
+
+          <span class="chip ok">
+            mplowrider
+          </span>
+
+          <span class="chip ok">
+            mplowrider2
+          </span>
+
+          <span class="chip ok">
+            mpexecutive
+          </span>
+
+          <span class="chip ok">
+            mpbattle
+          </span>
+
+        </div>
+
+
+        <div class="callout warn">
+
+          <div class="callout-label">
+            Stick to this list
+          </div>
+
+          <p>
+            Packs not listed here haven't been confirmed.
+            Adding an untested one is the most likely way to bring
+            the crashing back; try it on a spare SD card or back up
+            your saves first.
+          </p>
+
+        </div>
+
+
+        <h2 id="keep-or-toss">
+          If you haven't installed yet:
+          keep them or toss them
+        </h2>
+
+
+        <p>
+          Back on the trimming step in Installing,
+          you had two options for the DLCs you removed:
+        </p>
+
+
+        <div class="option-grid">
+
+          <div class="option-card">
+
+            <h4>
+              Option 1 - Delete them
+            </h4>
+
+            <p>
+              Simpler. Works great if you only care about the 8 required packs
+              and don't plan on adding more later.
+            </p>
+
+          </div>
+
+
+          <div class="option-card">
+
+            <h4>
+              Option 2 - Cut and paste them elsewhere
+            </h4>
+
+            <p>
+              Keeps every original DLC folder sitting in a spare directory
+              on your PC, ready to copy back in whenever you want more content
+              added. (Like more Vehicles & Mods, Weapons, PEDs, Locations, and Clothing)
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <figure
+          class="shot is-zoomable"
+          tabindex="0"
+          role="button"
+          aria-label="Open screenshot larger"
+        >
+
+          <img
+            src="assets/img/dlcpacks-folder.png"
+            alt="dlcpacks folder on the SD card containing exactly the 8 required folders: mpbiker, mpchristmas2, mpheist, mppatchesng, patchday1ng, patchday2bng, patchday2ng, patchday3ng."
+            loading="lazy"
+          >
+
+          <figcaption>
+            The 8 required packs on the SD card -
+            this is what you're adding to, not replacing.
+          </figcaption>
+
+        </figure>
+
+
+        <h2 id="add-dlc">
+          Adding a pack back in
+        </h2>
+
+
+        <p>
+          Where you add it depends on whether you've already built your NSP.
+        </p>
+
+
+        <h3>
+          Haven't installed yet
+        </h3>
+
+
+        <ol class="steps">
+
+          <li>
+
+            <p>
+              Before repacking, copy the DLC folder
+              (e.g. <code>mpluxe</code>) from wherever you saved it into:
+            </p>
+
+            <div class="path-row">
+
+              <p class="path">
+                GTA5\update\switch\dlcpacks
+              </p>
+
+              <button
+                class="copy-btn"
+                type="button"
+                aria-label="Copy path"
+                title="Copy path"
+              >
+                ⧉
+              </button>
+
+            </div>
+
+          </li>
+
+
+          <li>
+
+            <p>
+              Continue with the rest of the install as normal;
+              the pack will be baked into your NSP.
+            </p>
+
+          </li>
+
+        </ol>
+
+
+        <h3>
+          Already installed and playing
+        </h3>
+
+
+        <ol class="steps">
+
+          <li>
+
+            <p>
+              The Switch reads these DLC folders directly off the SD card,
+              so you don't need to rebuild the NSP. Copy the DLC folder
+              straight into:
+            </p>
+
+            <div class="path-row">
+
+              <p class="path">
+                atmosphere\contents\0100b00b51230000\romfs\update\switch\dlcpacks
+              </p>
+
+              <button
+                class="copy-btn"
+                type="button"
+                aria-label="Copy path"
+                title="Copy path"
+              >
+                ⧉
+              </button>
+
+            </div>
+
+          </li>
+
+
+          <li>
+
+            <p>
+              Launch the game and confirm it still boots
+              before adding a second pack.
+            </p>
+
+          </li>
+
+        </ol>
+
+
+        <div class="callout info">
+
+          <div class="callout-label">
+            Add one at a time
+          </div>
+
+          <p>
+            Drop in a single new pack, boot the game, and confirm it's stable
+            before adding the next one. If something you added does cause a
+            crash, removing that one folder again is all it takes to get back
+            to a working state.
+          </p>
+
+        </div>
+
+
+        <div class="panel-footnav">
+
+          <button
+            data-goto="updating"
+            type="button"
+          >
+            ← Back: Updating
+          </button>
+
+          <span class="spacer"></span>
+
+          <button
+            data-goto="installing"
+            type="button"
+          >
+            Back to start: Installing
+          </button>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- =======================================================
+       LIGHTBOX
+       ======================================================= -->
+
+  <div
+    class="lightbox"
+    id="lightbox"
+    hidden
+    aria-hidden="true"
+  >
+
+    <div class="lightbox-backdrop"></div>
+
+    <div class="lightbox-content">
+
+      <button
+        class="lightbox-close"
+        type="button"
+        data-close-lightbox
+        aria-label="Close screenshot"
+      >
+        ×
+      </button>
+
+      <img
+        id="lightbox-image"
+        class="lightbox-image"
+        alt=""
+      >
+
+      <div
+        id="lightbox-caption"
+        class="lightbox-caption"
+      ></div>
+
     </div>
 
-    <nav class="sidebar-nav" aria-label="Sections">
-      <div class="nav-label">GUIDE</div>
+  </div>
 
-      <button class="nav-item" data-target="installing">
-        <span class="num" aria-hidden="true">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 1v9m0 0L4.5 6.5M8 10l3.5-3.5M2 12.5v1a1 1 0 001 1h10a1 1 0 001-1v-1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-        Installing
-      </button>
 
-      <button class="nav-item" data-target="updating">
-        <span class="num" aria-hidden="true">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M13 4.5A5.5 5.5 0 003 6M3 11.5A5.5 5.5 0 0013 10M3 2.5v3.5H6.5M13 13.5V10H9.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-        Updating
-      </button>
+  <script src="assets/app.js"></script>
 
-      <button class="nav-item" data-target="dlcs">
-        <span class="num" aria-hidden="true">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M8 5.5v5M5.5 8h5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-        </span>
-        Installing DLCs
-      </button>
-    </nav>
-
-    <div class="sidebar-foot">
-      Community guide · not affiliated with Rockstar or Nintendo.
-    </div>
-  </aside>
-
-  <main id="main-content">
-
-    <!-- ================= INSTALLING ================= -->
-    <section id="installing" class="panel">
-      <p class="panel-eyebrow">Setup guide</p>
-      <h1>Installing the GTA V Switch port</h1>
-      <p class="panel-lede">
-        This walks you through turning a legally-owned GTA V PC install into an NSP you can put on
-        your Switch, from the first download to the first boot. Read a step fully before doing it;
-        most install problems come from skipping the cleanup steps.
-      </p>
-
-      <h2 id="prereqs">What you'll need<span class="section-sub">Grab all of these before you start</span></h2>
-
-      <ul class="dl-list">
-        <li>
-          <div class="dl-name">GTA V Patcher<span>gtav-patcher-4.00.7z</span></div>
-          <a class="dl-btn" href="https://gofile.io/d/FC7L2e6c" target="_blank" rel="noopener">Download</a>
-        </li>
-        <li>
-          <div class="dl-name"><code>update.rpf</code> &amp; <code>update2.rpf</code><span>Update.zip</span></div>
-          <a class="dl-btn" href="https://gofile.io/d/oz4mOpeV" target="_blank" rel="noopener">Download</a>
-        </li>
-        <li>
-          <div class="dl-name">Latest patch build<span>build-9b485eb8.7z</span></div>
-          <a class="dl-btn" href="https://buzzheavier.com/xo6825rx2lqz" target="_blank" rel="noopener">Download</a>
-        </li>
-        <li>
-          <div class="dl-name">NSPD → NSP Repack Tool<span>nspd-repack-tool v1.2</span></div>
-          <a class="dl-btn" href="https://github.com/1165565692-lang/nspd-repack-tool/releases/tag/v1.2" target="_blank" rel="noopener">Download</a>
-        </li>
-        <li>
-          <div class="dl-name">An NSP/XCI/NSC installer<span>Nut, Awoo Installer, or DBi — pick one</span></div>
-          <a class="dl-btn" href="https://github.com/blawar/nut" target="_blank" rel="noopener">Get one</a>
-        </li>
-      </ul>
-
-      <div class="callout info">
-        <div class="callout-label">Before you start</div>
-        <p>Have your own copy of the GTA V Legacy PC game files saved somewhere. The patcher edits a
-        copy of these files; it doesn't download the game for you.</p>
-      </div>
-
-      <h2 id="build-nsp">1 · Build the installable NSP</h2>
-      <ol class="steps">
-        <li><p>Extract <code>build-9b485eb8.7z</code> somewhere, then open <code>NPSDRepackGUI.exe</code>.</p></li>
-        <li><p>Click <strong>Browse</strong>, go into the extracted <code>build-9b485eb8</code> folder, and select the <code>game_nx_master.nspd</code> folder.</p></li>
-        <li><p>With <code>game_nx_master.nspd</code> selected, press <strong>Start repack</strong>.</p></li>
-        <li><p>When it finishes you'll get an <code>outputs</code> folder containing your NSP. Use the app's <strong>Open output folder</strong> button to jump straight there.</p>
-        <p class="path">outputs\build-9b485eb8-game_nx_master.nspd-20260909_143107\nsp\0100b00b51230000.nsp</p></li>
-      </ol>
-
-      <figure class="shot">
-        <img src="assets/img/nspd-repack-tool.png" alt="NSPD to NSP Repack Tool v1.2 showing a completed repack, with NSP, output, and manifest paths listed in the log." loading="lazy">
-        <figcaption>The repack tool after a finished run - the log shows exactly where your <code>.nsp</code> landed.</figcaption>
-      </figure>
-
-      <h2 id="patch-files">2 · Patch your game files</h2>
-      <ol class="steps">
-        <li><p>Extract <code>gtav-patcher-4.00.7z</code>, open the <code>win-x64</code> folder, and launch <code>GTAVPatcher.exe</code>.</p></li>
-        <li><p>Next to <strong>GTA V folder</strong>, browse to the GTA V install you want to patch.</p></li>
-        <li><p>Next to <strong>Platform pack</strong>, select the <code>build-9b485eb8\platformpack</code> folder.</p></li>
-        <li><p>Set <strong>DLC packs</strong> to <strong>Minimum</strong> and make sure <strong>Delete high-detail (+hi) resources</strong> is checked.</p></li>
-        <li><p>Click <strong>Patch</strong> and let it run.</p></li>
-      </ol>
-
-      <figure class="shot">
-        <img src="assets/img/asset-patcher.png" alt="GTA V Asset Patcher window with the GTA V folder, target platform set to Nintendo Switch, platform pack path, and DLC packs set to Single player - minimum with Delete high-detail resources checked." loading="lazy">
-        <figcaption>Correct settings before you hit patch - target platform Nintendo Switch, DLC packs on <strong>minimum</strong>, high-detail resources deleted.</figcaption>
-      </figure>
-
-      <div class="callout warn">
-        <div class="callout-label">Takes about 30 minutes</div>
-        <p>Let the patcher run to completion; closing it early leaves you with a half-patched folder you'll need to redo from scratch.</p>
-      </div>
-
-      <h3>Clean up the patched folder</h3>
-      <p>Once patching finishes, open your patched GTA V folder and delete every <code>.dll</code> and
-      <code>.exe</code> file except <code>GTA5.exe</code>, along with anything Rockstar-related.
-      You should be left with exactly this:</p>
-      <div class="chip-grid">
-        <span class="chip">switch/ folder</span>
-        <span class="chip">update/ folder</span>
-        <span class="chip">switch(letter).rpf files</span>
-        <span class="chip">.txt files</span>
-      </div>
-
-      <h3>Trim the DLC packs</h3>
-      <p>Open the following folder and remove DLCs down to the 8 that boot reliably. This is the single most common crash cause; don't skip it.</p>
-      <p class="path">GTA5\update\switch\dlcpacks</p>
-      
-      <div class="chip-grid">
-        <span class="chip keep">mpbiker</span>
-        <span class="chip keep">mpheist</span>
-        <span class="chip keep">mpchristmas2</span>
-        <span class="chip keep">mppatchesng</span>
-        <span class="chip keep">patchday1ng</span>
-        <span class="chip keep">patchday2bng</span>
-        <span class="chip keep">patchday2ng</span>
-        <span class="chip keep">patchday3ng</span>
-      </div>
-      <div class="callout info">
-        <div class="callout-label">Want more content later?</div>
-        <p>Don't delete the other DLC folders outright if you can help it; cut and paste them
-        somewhere safe instead. The <button class="nav-item" style="display:inline-flex;padding:2px 8px;margin:0;" data-target="dlcs">Installing DLCs</button>
-        tab covers which extra packs are safe to add back in, and how.</p>
-      </div>
-
-      <h2 id="install-switch">3 · Install it on your Switch</h2>
-      <ol class="steps">
-        <li><p>Copy your <code>.nsp</code> anywhere onto your SD card and install it with Awoo Installer or DBi.</p></li>
-        <li><p>On the SD card, create the folder path:</p>
-        <p class="path">atmosphere\contents\0100b00b51230000\romfs</p></li>
-        <li><p>From your patched GTA V folder, copy everything inside its <code>romfs</code> folder into the one you just made on the SD card.</p></li>
-      </ol>
-
-      <figure class="shot">
-        <img src="assets/img/romfs-contents.png" alt="File explorer showing the final romfs folder contents: switch and update folders, switch(letter).rpf files, GTA5.exe, title.rgl, version.txt, and versioninfo.txt." loading="lazy">
-        <figcaption>What a correctly populated <span class="path" style="display:inline;padding:1px 6px;">romfs</span> folder looks like once everything's copied over.</figcaption>
-      </figure>
-
-      <div class="callout ok">
-        <div class="callout-label">That's the install done</div>
-        <p>Launch the game from your Switch's home menu. If it boots to the title screen, you're set.</p>
-      </div>
-
-      <div class="panel-footnav">
-        <span class="spacer"></span>
-        <button data-goto="updating">Next: Updating the game →</button>
-      </div>
-    </section>
-
-    <!-- ================= UPDATING ================= -->
-    <section id="updating" class="panel">
-      <p class="panel-eyebrow">Keeping it current</p>
-      <h1>Updating the game</h1>
-      <p class="panel-lede">
-        What you need to redo depends entirely on what the new patch actually touched. Check which
-        case you're in before you start deleting things.
-      </p>
-
-      <h2 id="case-1">Case 1 - Only <code>gameconfig.xml</code> changed</h2>
-      <p>This is the lightest update. You only need the
-      <a href="https://github.com/Geekmaxxer/GTA5SwitchGCUpdater" target="_blank" rel="noopener">GTA5SwitchGCUpdater</a> tool.</p>
-      <ol class="steps">
-        <li><p>Open the updater. Next to <strong>Select gameconfig.xml</strong>, browse to the new gameconfig file from the update.</p></li>
-        <li><p>Next to <strong>Select update.rpf file</strong>, browse to the <code>update.rpf</code> inside your patched GTA V folder's <code>update</code> directory.</p></li>
-        <li><p>Press <strong>Update RPF</strong> and choose where to save the result.</p></li>
-        <li><p>Copy the new file over the one on your SD card:</p>
-        <p class="path">SWITCHSD\atmosphere\contents\0100b00b51230000\romfs\update\update.rpf</p></li>
-      </ol>
-
-      <figure class="shot">
-        <img src="assets/img/gameconfig-updater.png" alt="GTA Gameconfig Updater v0.2 with a gameconfig.xml and an update.rpf file selected, and an Update RPF button." loading="lazy">
-        <figcaption>Both files selected and ready - one click writes the merged <code>update.rpf</code>.</figcaption>
-      </figure>
-
-      <h2 id="case-2">Case 2 - The platform pack changed</h2>
-      <p>Repeat the <a href="#" data-goto="installing" onclick="return false;">patching steps</a>
-      from the Installing tab, but you can skip the DLC deletion and the file cleanup; that part
-      doesn't need to be redone for a platform pack update.</p>
-
-      <div class="callout warn">
-        <div class="callout-label">For a major update</div>
-        <p>If the update is a big one, you'll get the most reliable result by starting over completely:
-        fresh GTA V Legacy PC files, and the full setup from the Installing tab, rather than patching
-        on top of what's already there.</p>
-      </div>
-
-      <div class="panel-footnav">
-        <button data-goto="installing">← Back: Installing</button>
-        <span class="spacer"></span>
-        <button data-goto="dlcs">Next: Installing DLCs →</button>
-      </div>
-    </section>
-
-    <!-- ================= DLCS ================= -->
-    <section id="dlcs" class="panel">
-      <p class="panel-eyebrow">Optional content</p>
-      <h1>Adding more DLCs safely</h1>
-      <p class="panel-lede">
-        The base install strips almost every DLC down to 8 so the game boots reliably. Plenty of
-        other packs are known to work fine; you just add them back deliberately, one at a time,
-        instead of restoring everything at once.
-      </p>
-
-      <h2 id="known-working">DLCs confirmed to work</h2>
-      <p>These have been tested on top of the 8 required packs without crashing:</p>
-      <div class="chip-grid">
-        <span class="chip ok">mpassault</span>
-        <span class="chip ok">mpchristmas2018</span>
-        <span class="chip ok">mpgunrunning</span>
-        <span class="chip ok">mpsecurity</span>
-        <span class="chip ok">mpheist3</span>
-        <span class="chip ok">mpheist4</span>
-        <span class="chip ok">mpluxe</span>
-        <span class="chip ok">mpluxe2</span>
-        <span class="chip ok">mplowrider</span>
-        <span class="chip ok">mplowrider2</span>
-        <span class="chip ok">mpexecutive</span>
-        <span class="chip ok">mpbattle</span>
-      </div>
-      <div class="callout warn">
-        <div class="callout-label">Stick to this list</div>
-        <p>Packs not listed here haven't been confirmed. Adding an untested one is the most likely
-        way to bring the crashing back; try it on a spare SD card or back up your saves first.</p>
-      </div>
-
-      <h2 id="keep-or-toss">If you haven't installed yet: keep them or toss them</h2>
-      <p>Back on the trimming step in Installing, you had two options for the DLCs you removed:</p>
-      <div class="option-grid">
-        <div class="option-card">
-          <h4>Option 1 - Delete them</h4>
-          <p>Simpler. Fine if you only care about the 8 required packs and don't plan on adding more later.</p>
-        </div>
-        <div class="option-card">
-          <h4>Option 2 - Cut and paste them elsewhere</h4>
-          <p>Keeps every original DLC folder sitting in a spare directory on your PC, ready to copy
-          back in whenever you want one from the confirmed-working list above.</p>
-        </div>
-      </div>
-
-      <figure class="shot">
-        <img src="assets/img/dlcpacks-folder.png" alt="dlcpacks folder on the SD card containing exactly the 8 required folders: mpbiker, mpchristmas2, mpheist, mppatchesng, patchday1ng, patchday2bng, patchday2ng, patchday3ng." loading="lazy">
-        <figcaption>The 8 required packs on the SD card - this is what you're adding to, not replacing.</figcaption>
-      </figure>
-
-      <h2 id="add-dlc">Adding a pack back in</h2>
-      <p>Where you add it depends on whether you've already built your NSP.</p>
-
-      <h3>Haven't installed yet</h3>
-      <ol class="steps">
-        <li><p>Before repacking, copy the DLC folder (e.g. <code>mpluxe</code>) from wherever you saved it into:</p>
-        <p class="path">GTA5\update\switch\dlcpacks</p></li>
-        <li><p>Continue with the rest of the install as normal; the pack will be baked into your NSP.</p></li>
-      </ol>
-
-      <h3>Already installed and playing</h3>
-      <ol class="steps">
-        <li><p>The Switch reads these DLC folders directly off the SD card, so you don't need to rebuild the NSP. Copy the DLC folder straight into:</p>
-        <p class="path">atmosphere\contents\0100b00b51230000\romfs\update\switch\dlcpacks</p></li>
-        <li><p>Launch the game and confirm it still boots before adding a second pack.</p></li>
-      </ol>
-
-      <div class="callout info">
-        <div class="callout-label">Add one at a time</div>
-        <p>Drop in a single new pack, boot the game, and confirm it's stable before adding the next
-        one. If something you added does cause a crash, removing that one folder again is all it
-        takes to get back to a working state.</p>
-      </div>
-
-      <div class="panel-footnav">
-        <button data-goto="updating">← Back: Updating</button>
-        <span class="spacer"></span>
-        <button data-goto="installing">Back to start: Installing</button>
-      </div>
-    </section>
-
-  </main>
-</div>
-
-<script src="assets/app.js"></script>
 </body>
 </html>
