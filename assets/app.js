@@ -17,7 +17,7 @@
     });
 
     document.title = (document.querySelector('#' + target + ' h1') || {}).textContent
-      ? document.querySelector('#' + target + ' h1').textContent + ' — GTA V Switch Port Guide'
+      ? document.querySelector('#' + target + ' h1').textContent + ' - GTA V Switch Port Guide'
       : 'GTA V Switch Port Guide';
 
     if (!opts || !opts.skipScroll) {

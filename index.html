@@ -64,7 +64,7 @@
       <h1>Installing the GTA V Switch port</h1>
       <p class="panel-lede">
         This walks you through turning a legally-owned GTA V PC install into an NSP you can put on
-        your Switch, from the first download to the first boot. Read a step fully before doing it —
+        your Switch, from the first download to the first boot. Read a step fully before doing it;
         most install problems come from skipping the cleanup steps.
       </p>
 
@@ -96,7 +96,7 @@
       <div class="callout info">
         <div class="callout-label">Before you start</div>
         <p>Have your own copy of the GTA V Legacy PC game files saved somewhere. The patcher edits a
-        copy of these files — it doesn't download the game for you.</p>
+        copy of these files; it doesn't download the game for you.</p>
       </div>
 
       <h2 id="build-nsp">1 · Build the installable NSP</h2>
@@ -110,7 +110,7 @@
 
       <figure class="shot">
         <img src="assets/img/nspd-repack-tool.png" alt="NSPD to NSP Repack Tool v1.2 showing a completed repack, with NSP, output, and manifest paths listed in the log." loading="lazy">
-        <figcaption>The repack tool after a finished run — the log shows exactly where your <code>.nsp</code> landed.</figcaption>
+        <figcaption>The repack tool after a finished run - the log shows exactly where your <code>.nsp</code> landed.</figcaption>
       </figure>
 
       <h2 id="patch-files">2 · Patch your game files</h2>
@@ -124,12 +124,12 @@
 
       <figure class="shot">
         <img src="assets/img/asset-patcher.png" alt="GTA V Asset Patcher window with the GTA V folder, target platform set to Nintendo Switch, platform pack path, and DLC packs set to Single player - minimum with Delete high-detail resources checked." loading="lazy">
-        <figcaption>Correct settings before you hit patch — target platform Nintendo Switch, DLC packs on <strong>minimum</strong>, high-detail resources deleted.</figcaption>
+        <figcaption>Correct settings before you hit patch - target platform Nintendo Switch, DLC packs on <strong>minimum</strong>, high-detail resources deleted.</figcaption>
       </figure>
 
       <div class="callout warn">
         <div class="callout-label">Takes about 30 minutes</div>
-        <p>Let the patcher run to completion — closing it early leaves you with a half-patched folder you'll need to redo from scratch.</p>
+        <p>Let the patcher run to completion; closing it early leaves you with a half-patched folder you'll need to redo from scratch.</p>
       </div>
 
       <h3>Clean up the patched folder</h3>
@@ -144,8 +144,9 @@
       </div>
 
       <h3>Trim the DLC packs</h3>
-      <p>Open <span class="path">GTA5\update\switch\dlcpacks</span> and remove DLCs down to the 8
-      that boot reliably. This is the single most common crash cause — don't skip it.</p>
+      <p>Open the following folder and remove DLCs down to the 8 that boot reliably. This is the single most common crash cause; don't skip it.</p>
+      <p class="path">GTA5\update\switch\dlcpacks</p>
+      
       <div class="chip-grid">
         <span class="chip keep">mpbiker</span>
         <span class="chip keep">mpheist</span>
@@ -158,7 +159,7 @@
       </div>
       <div class="callout info">
         <div class="callout-label">Want more content later?</div>
-        <p>Don't delete the other DLC folders outright if you can help it — cut and paste them
+        <p>Don't delete the other DLC folders outright if you can help it; cut and paste them
         somewhere safe instead. The <button class="nav-item" style="display:inline-flex;padding:2px 8px;margin:0;" data-target="dlcs">Installing DLCs</button>
         tab covers which extra packs are safe to add back in, and how.</p>
       </div>
@@ -196,7 +197,7 @@
         case you're in before you start deleting things.
       </p>
 
-      <h2 id="case-1">Case 1 — Only <code>gameconfig.xml</code> changed</h2>
+      <h2 id="case-1">Case 1 - Only <code>gameconfig.xml</code> changed</h2>
       <p>This is the lightest update. You only need the
       <a href="https://github.com/Geekmaxxer/GTA5SwitchGCUpdater" target="_blank" rel="noopener">GTA5SwitchGCUpdater</a> tool.</p>
       <ol class="steps">
@@ -209,12 +210,12 @@
 
       <figure class="shot">
         <img src="assets/img/gameconfig-updater.png" alt="GTA Gameconfig Updater v0.2 with a gameconfig.xml and an update.rpf file selected, and an Update RPF button." loading="lazy">
-        <figcaption>Both files selected and ready — one click writes the merged <code>update.rpf</code>.</figcaption>
+        <figcaption>Both files selected and ready - one click writes the merged <code>update.rpf</code>.</figcaption>
       </figure>
 
-      <h2 id="case-2">Case 2 — The platform pack changed</h2>
+      <h2 id="case-2">Case 2 - The platform pack changed</h2>
       <p>Repeat the <a href="#" data-goto="installing" onclick="return false;">patching steps</a>
-      from the Installing tab, but you can skip the DLC deletion and the file cleanup — that part
+      from the Installing tab, but you can skip the DLC deletion and the file cleanup; that part
       doesn't need to be redone for a platform pack update.</p>
 
       <div class="callout warn">
@@ -237,7 +238,7 @@
       <h1>Adding more DLCs safely</h1>
       <p class="panel-lede">
         The base install strips almost every DLC down to 8 so the game boots reliably. Plenty of
-        other packs are known to work fine — you just add them back deliberately, one at a time,
+        other packs are known to work fine; you just add them back deliberately, one at a time,
         instead of restoring everything at once.
       </p>
 
@@ -260,18 +261,18 @@
       <div class="callout warn">
         <div class="callout-label">Stick to this list</div>
         <p>Packs not listed here haven't been confirmed. Adding an untested one is the most likely
-        way to bring the crashing back — try it on a spare SD card or back up your saves first.</p>
+        way to bring the crashing back; try it on a spare SD card or back up your saves first.</p>
       </div>
 
       <h2 id="keep-or-toss">If you haven't installed yet: keep them or toss them</h2>
       <p>Back on the trimming step in Installing, you had two options for the DLCs you removed:</p>
       <div class="option-grid">
         <div class="option-card">
-          <h4>Option 1 — Delete them</h4>
+          <h4>Option 1 - Delete them</h4>
           <p>Simpler. Fine if you only care about the 8 required packs and don't plan on adding more later.</p>
         </div>
         <div class="option-card">
-          <h4>Option 2 — Cut and paste them elsewhere</h4>
+          <h4>Option 2 - Cut and paste them elsewhere</h4>
           <p>Keeps every original DLC folder sitting in a spare directory on your PC, ready to copy
           back in whenever you want one from the confirmed-working list above.</p>
         </div>
@@ -279,7 +280,7 @@
 
       <figure class="shot">
         <img src="assets/img/dlcpacks-folder.png" alt="dlcpacks folder on the SD card containing exactly the 8 required folders: mpbiker, mpchristmas2, mpheist, mppatchesng, patchday1ng, patchday2bng, patchday2ng, patchday3ng." loading="lazy">
-        <figcaption>The 8 required packs on the SD card — this is what you're adding to, not replacing.</figcaption>
+        <figcaption>The 8 required packs on the SD card - this is what you're adding to, not replacing.</figcaption>
       </figure>
 
       <h2 id="add-dlc">Adding a pack back in</h2>
@@ -289,7 +290,7 @@
       <ol class="steps">
         <li><p>Before repacking, copy the DLC folder (e.g. <code>mpluxe</code>) from wherever you saved it into:</p>
         <p class="path">GTA5\update\switch\dlcpacks</p></li>
-        <li><p>Continue with the rest of the install as normal — the pack will be baked into your NSP.</p></li>
+        <li><p>Continue with the rest of the install as normal; the pack will be baked into your NSP.</p></li>
       </ol>
 
       <h3>Already installed and playing</h3>
