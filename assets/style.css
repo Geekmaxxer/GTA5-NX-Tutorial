@@ -963,41 +963,25 @@ ol.steps li p:first-child {
 
 .path-row {
   display: flex;
-  align-items: stretch;
-
+  align-items: stretch; 
   max-width: 760px;
-
   margin: 9px 0 14px;
 }
 
-
 .path-row .path {
   flex: 1;
-
   min-width: 0;
-
   margin: 0;
-
   padding: 9px 11px;
-
-  border:
-    1px solid var(--border-subtle);
-
+  border: 1px solid var(--border-subtle);
   border-right: 0;
-
   border-radius: 7px 0 0 7px;
-
   background: var(--bg-inset);
-
   color: #7ee787;
-
   font-family: var(--font-mono);
   font-size: 12px;
-
   line-height: 1.5;
-
   overflow-x: auto;
-
   white-space: nowrap;
 }
 
@@ -1033,23 +1017,14 @@ ol.steps li p:first-child {
 
 .copy-btn {
   flex-shrink: 0;
-
   width: 42px;
-
-  border:
-    1px solid var(--border-subtle);
-
+  height: auto; 
+  border: 1px solid var(--border-subtle);
   border-radius: 0 7px 7px 0;
-
   background: #0d1118;
-
   color: var(--text-faint);
-
   cursor: pointer;
-
-  transition:
-    background 0.15s ease,
-    color 0.15s ease;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 
 .copy-btn:hover {
