@@ -25,18 +25,20 @@
       ? panels[0].id
       : null;
 
-  var names = {
+var names = {
     installing: 'Installing',
     updating: 'Updating',
     dlcs: 'Installing DLCs',
-    'error-reasons': 'Error Reasons'
+    'error-reasons': 'Error Reasons',
+    extras: 'Extras' 
   };
 
   var order = [
     'installing',
     'updating',
     'dlcs',
-    'error-reasons'
+    'error-reasons',
+    'extras' 
   ];
 
 
