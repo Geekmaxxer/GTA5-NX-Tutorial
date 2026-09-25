@@ -1233,6 +1233,13 @@ figure.shot figcaption {
   font-size: 12px;
 }
 
+.dl-list li.dl-item-featured {
+  background: rgba(134, 239, 172, 0.08);
+  border: 1px solid hsla(142, 93%, 48%, 0.534);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
 
 .dl-btn {
   flex-shrink: 0;
